@@ -32,9 +32,10 @@ int main() {
       std::cout << "Correct!";
     } else {
       std::cout << "Incorrect! The tractor beam pulls the person in further." ;
+      incorrect.push_back(letter);
       misses++;
     }
-    
+    guess = false;
   }
 
   end_game(answer, codeword);
